@@ -16,8 +16,16 @@ def main(argv: Optional[List[str]] = None) -> int:
     with open(args.input) as f:
         inputs = [line.rstrip() for line in f]
 
+    previous: Optional[int] = None
+    larger = 0
     for i in inputs:
         print(i)
+        depth = int(i)
+        if previous and depth > previous:
+            larger += 1
+        previous = depth
+
+    print(larger)
 
     return 0
 
