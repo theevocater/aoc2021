@@ -30,7 +30,7 @@ def main(argv: Optional[List[str]] = None) -> int:
             session = f.read().strip()
 
     req = request.Request(
-        f'https://adventofcode.com/2020/day/{day}/input',
+        f'https://adventofcode.com/2021/day/{day}/input',
         headers={'Cookie': f'session={session}'},
     )
     input_file = 'input.txt'
