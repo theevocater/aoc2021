@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import argparse
-from typing import Dict
 from typing import List
 from typing import Optional
 
